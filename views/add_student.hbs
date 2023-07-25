@@ -1,0 +1,61 @@
+<div class="container col-md-6 card">
+        <form action="/output" method="post">
+            <h1 class="text text-primary">Add new student</h1>
+            <table class="table mx-auto">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>Name</th>
+                        <td>
+                            <input class="form-control" type="text" name="name" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Date of birth</th>
+                        <td>
+                            <input class="form-control" type="date" name="dob" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Email</th>
+                        <td><input class="form-control" type="email" name="email"></td>
+                    </tr>
+                    <tr>
+                        <th>Gender</th>
+                        <td>
+                            <input type="radio" name="gender" value="Male">Male
+                            <input type="radio" name="gender" value="Female">Female
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Student year</th>
+                        <td>
+                            <input class="form-control" type="number" name="year" min="1" max="4">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Major</th>
+                        <td>
+                           <select name="major" required>
+                                <option value="computing">Computing</option>
+                                <option value="business">Business</option>
+                                <option value="design">Graphic Design</option>
+                                <option value="marketing">Marketing</option>
+                           </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Image</th>
+                        <td>
+                            <input class="form-control" type ="url" name="image">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th colspan="2">
+                            <input type="submit" value="Add">
+                        </th>
+                    </tr>
+                    
+                </thead>
+            </table>
+        </form>
+    </div>

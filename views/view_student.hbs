@@ -1,0 +1,55 @@
+<div class="container col-md-6 card">
+        <form action="/output" method="post">
+            <h1 class="text text-primary">Student Information</h1>
+            <table class="table mx-auto">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>Name</th>
+                        <td>
+                            {{student.name}}
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Date of birth</th>
+                        <td>
+                            {{dateFormat student.dob "DD/MM/YYYY"}}
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Email</th>
+                        <td>{{student.email}}</td>
+                    </tr>
+                    <tr>
+                        <th>Gender</th>
+                        <td>
+                            {{student.gender}}
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Student year</th>
+                        <td>
+                            {{student.year}}
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Major</th>
+                        <td>
+                            {{student.major}}
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Image</th>
+                        <td>
+                            <img src="{{ student.image}}" width="200" height="200"> 
+                        </td>
+                    </tr>
+                    <tr>
+                        <th colspan="2">
+                            <input type="submit" value="Add">
+                        </th>
+                    </tr>
+                    
+                </thead>
+            </table>
+        </form>
+    </div>
